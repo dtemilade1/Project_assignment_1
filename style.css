@@ -1,0 +1,82 @@
+/*css file for the html document*/
+
+/* Style for the grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 10px;
+}
+
+/* style for header */
+.header{
+    background-color: black;
+    height: 70px;
+    width: 100%;
+    left: 0%;
+    top: 0%;
+}
+
+.logo{
+background-image: url('spectranet-logo.png');
+background-repeat: no-repeat;
+height: 70px;
+}
+/* styles for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* style for class elements */
+  .faq-item {
+    margin-bottom: 10px;
+  }
+  
+  /* question style */
+  .question {
+    display: inline-block;
+  }
+  
+  /* question label */
+  .question + label {
+    cursor: pointer;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    
+  }
+  
+  /* for display when clicked. */
+  .question:checked + .question-label + .answer {
+    display: block;
+  }
+  
+  /* display only the clicked */
+  .question-label + .answer {
+    display: none;
+  }
+  
+  /* question's toggling style */
+  .question-label:hover {
+    color: green;
+  }
+
+/* Style for the imag */
+.img-display img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: 0;
+}
+
+footer {
+	background-color: orangered;
+  -webkit-text-fill-color: blue;
+  -webkit-text-stroke-width: 1px;
+	height: 20px;
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
